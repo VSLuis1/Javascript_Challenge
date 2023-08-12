@@ -1,21 +1,21 @@
 // // Arrays
 let myArr = [0,1,2,3,4,5]
-// console.log(myArr)
+console.log(myArr)
 
-// // array index position of elements
-// console.log(myArr[3]);
+// array index position of elements
+console.log(myArr[3]);
 
-// // Array Methods
-// myArr.push(6)  //push adds element to the last of the array
-// myArr.pop()   //pop removes element from the last of the array
+// Array Methods
+myArr.push(6)  //push adds element to the last of the array
+myArr.pop()   //pop removes element from the last of the array
 
-// myArr.unshift(1)  //unshift adds element to the start of the array
-// myArr.shift()  //shift removes first element of array
+myArr.unshift(1)  //unshift adds element to the start of the array
+myArr.shift()  //shift removes first element of array
 
 
-// let newArr = myArr.join();
-// console.log (myArr) //array
-// console.log(newArr) //join binds the array and form the new string of existing array
+let newArr = myArr.join();
+console.log (myArr) //array
+console.log(newArr) //join binds the array and form the new string of existing array
 
 // What is difference between the slice and splice 
 // slice vs splice 
