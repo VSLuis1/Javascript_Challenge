@@ -1,0 +1,25 @@
+*{
+    padding : 0;
+    margin : 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: aqua;
+}
+
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+#clock{
+    background-color: red;
+    padding: 30px;
+    height: 10px;
+    width: 100px;
+    clear: right;
+}
