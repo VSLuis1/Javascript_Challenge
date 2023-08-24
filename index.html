@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events in js</title>
+</head>
+<body>
+    <div id="all-images">
+   <div id="1"><a href="#">Image 1</a></div>
+   <div id="2"><a href="#">Image 2</a></div>
+   <div id="3"><a href="#">Image 3</a></div>
+   <div id="4"><a href="#">Image 4</a></div>
+</div>
+</body>
+<script>
+    // ***********OLD SYNTAX *******************
+    // document.getElementById("1").onclick = function(){
+    //     alert("Image 1")
+    // }
+
+    
+    // attachEvent() -- used in internet explorer era time
+    // jQuery --- onClick used in jQuer
+
+    //check documentationa and study this events
+    // https://developer.mozilla.org/en-US/docs/Web/Events
+    /* types, timeStamp, defaultPrevented, target, toElement , srcElement, currentTarget */
+
+     
+    // Interview Perspective
+    /*clientX , cientY , screenX, screenY, altKey,, ctrlKey, shiftKey, keyCode*/
+
+
+    // *****************MODERN SYNTAX **********
+    document.getElementById("all-images").addEventListener("click", (e)=>{
+        console.log("click the image")
+
+        // *** There is two event propogations - 1)bubbling 2)capturing
+
+        e.stopPropagation();  //it stop from bubbling
+    },false)
+    document.getElementById("2").addEventListener("click", (e)=>{
+        console.log("2 is click")
+        e.preventDefault();
+        e.stopPropagation();
+    },false)
+
+    // Remove()
+    document.getElementById("all-images").addEventListener(function(e){
+        //Method 1
+        // let removeIt = e.target.parentNode;
+        // removeIt.remove();
+
+        // Method 2
+        // removeIt.parentNode.removeChild(removeIt)
+
+        
+    }
+
+</script>
+</html>
