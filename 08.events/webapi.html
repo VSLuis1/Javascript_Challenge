@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web api</title>
+</head>
+<body>
+    <h1>Chai pe charcha</h1>
+    <button id="Stop">Stop</button>
+    <button id="Start">Start</button>
+</body>
+<script>
+
+// // setTimeout(function(){
+//     const changeText = () =>{
+//         document.querySelector("h1").innerHTML= "chai aur code";
+
+//     }
+//     const changeMe = setTimeout(changeText, 2000);
+
+//  // clearTimeout() functions
+// const stopped = document.querySelector("#Stop").addEventListener("click", ()=>{
+//     clearTimeout(changeMe);
+//     console.log("stopped")
+// })
+
+
+// setInterval() functions
+const saydate = document.querySelector("#Start").addEventListener("click",() =>{
+    const sayHello = setInterval(saydate, 1000);
+    console.log("chai aur code");
+})
+
+const sayBye = document.querySelector("#Stop").addEventListener("click", ()=>{
+    clearInterval(saydate);
+    console.log("stopped");
+})
+
+</script>
+</html>
