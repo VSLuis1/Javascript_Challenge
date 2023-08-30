@@ -32,3 +32,27 @@ new Promise ((resolve, reject) =>{
 }).then((user)=>{
     console.log(user)
 })
+
+// Method 4
+
+new Promise ((resolve, reject)=>{
+    setTimeout(()=>{
+        let error = false;
+        if(!error){
+           resolve({user: "luis" , pass: "123"}) 
+        }
+        else{
+            reject("please enter valid details")
+        };
+
+    },2000)
+}).then((user)=>{
+    console.log(user)
+    return user.pass;
+}).then((pass)=>{
+    console.log(pass)
+}).catch((error)=>{
+    console.log(error)
+}).finally(()=>{
+    console.log("the promise is either resolve or rejected")
+});
