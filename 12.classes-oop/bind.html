@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind React</title>
+</head>
+<body>
+    <button id="btn">Button Clicked</button>
+</body>
+<script>
+    class React {
+        constructor (){
+            this.libraries ="React"
+            this.server = "localhost-420"
+
+            document.querySelector('btn').addEventListener("click", this.handleClick.bind(this))
+        }
+
+        handleClick(){
+            console.log("Button Clicked")
+            console.log(this.libraries)
+        }
+    }
+
+</script>
+</html>
