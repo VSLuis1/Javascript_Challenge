@@ -15,6 +15,6 @@ class chai {
 
 
 const luis = new chai ("vsuis", "123")
-console.log(luis._name)
+console.log(luis.name)
 
 
